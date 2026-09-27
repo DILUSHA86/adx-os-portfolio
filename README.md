@@ -152,3 +152,7 @@ public class SecurityExample {
         </div>
     </footer>
 </div>
+
+curl -H "Authorization: Bearer YOUR_TOKEN" \
+     -H "Accept: application/vnd.github+json" \
+     https://api.github.com/repos/OWNER/REPO/dependabot/alerts
