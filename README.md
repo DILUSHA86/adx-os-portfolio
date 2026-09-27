@@ -21,7 +21,23 @@ Artist SeaArt.ai portfolio MiT
     <title>ADX_OS | Global Interface</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Security scanning animation */
+
+     import java.security.MessageDigest;
+
+public class SecurityExample {
+    public static void main(String[] args) throws Exception {
+        String text = "ADX-AI";
+        MessageDigest md = MessageDigest.getInstance("SHA-256");
+        byte[] hash = md.digest(text.getBytes());
+
+        StringBuilder sb = new StringBuilder();
+        for (byte b : hash) {
+            sb.append(String.format("%02x", b));
+        }
+
+        System.out.println(sb.toString());
+    }
+}   /* Security scanning animation */
         @keyframes scan {
             0% { transform: translateY(-100%); }
             100% { transform: translateY(1000%); }
