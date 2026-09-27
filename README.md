@@ -156,3 +156,8 @@ public class SecurityExample {
 curl -H "Authorization: Bearer YOUR_TOKEN" \
      -H "Accept: application/vnd.github+json" \
      https://api.github.com/repos/OWNER/REPO/dependabot/alerts
+.github/
+└── workflows/
+    ├── security.yml
+    ├── tests.yml
+    └── deploy.yml
