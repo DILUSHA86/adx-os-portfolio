@@ -156,3 +156,7 @@ public class SecurityExample {
 curl -H "Authorization: Bearer YOUR_TOKEN" \
      -H "Accept: application/vnd.github+json" \
      https://api.github.com/repos/OWNER/REPO/dependabot/alerts
+curl -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <TOKEN>" \
+  "https://api.github.com/repos/octocat/hello-world/dependabot/alerts?state=open&severity=high"
